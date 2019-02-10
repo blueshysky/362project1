@@ -23,7 +23,7 @@ body {
   font-size: .75em;
 }
 
-#returningUsers {
+#returningusers {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
