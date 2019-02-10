@@ -10,8 +10,10 @@
 
 <body>
 
-<h1 id="content" >
-  <form id="signup" action="#null" method="get">
+<h1 id="returningUsers" >
+  Sign-in!
+
+  <form id="login" action="#null" method="get">
 
     <ol>
       <li>
@@ -25,13 +27,43 @@
       </li>
 
       <li>
-        <lable for="enter">Submit</lable>
-        <input type="submit" name="enter" id="enter" value="Sign up!" />
+        <lable for="enter">Login</lable>
+        <input type="submit" name="enter" id="login" value="login!" />
       </li>
     </ol>
 
   </form>
 </h1>
+
+  <main id="content" >
+      <section id="newusers">
+          <p>
+            Sign-up here!
+          </p>
+
+          <form id="signup" action="index.html" method="post">
+            <ol>
+
+              <li>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+              </li>
+
+              <li>
+                <label for="newpassword">Password</label>
+                <input type="text" name="newpassword" id="newpassword">
+              </li>
+
+              <li>
+                <label for="signup">Submit</label>
+                <input type="submit" name="enter" value="signup!">
+              </li>
+
+            </ol>
+
+          </form>
+      </section>
+  </main>
 
 </body>
 <script src="assest/js/site.js"> </script>

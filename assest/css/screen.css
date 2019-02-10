@@ -12,27 +12,53 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html,
 body {
   font-size: 1.225em;
+  font-style: helvetica, Arial, sans-serif;
   background-color: #EEE;
+  padding: .313em;
 }
 
 
-/*Form Format*/
-form {
+/*Topside Format*/
+#signup {
   font-size: .75em;
 }
 
-ol {
+#returningUsers {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row-reverse;
   float: right;
 }
 
-label {
+#login ol li{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  float: right;
+}
+
+#login label {
   padding-right: .225em;
 }
 
-input {
+#login input {
+  display: flex;
+  justify-content: space-between;
   padding: .225em;
   width: 100%;
+}
+
+/*body format*/
+#content {
+  display:table;
+  width: 100%;
+}
+
+#newusers,
+#signup {
+  display: table-cell;
+  align-content: center;
+  vertical-align: middle;
 }
