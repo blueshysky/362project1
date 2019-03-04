@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function()
   var username = document.querySelector("#username");
   var email = document.querySelector("#email");
   var submit = document.querySelector("#signinsubmit");
-  var inner_text = document.querySelector("#two");
 
   function eq(value, condition)
   {
@@ -79,16 +78,15 @@ document.addEventListener("DOMContentLoaded", function()
     }
   });
 
-  if(valid(namevalue.length, gt, 0) && eq(passvalue.length, 10)){
-    submit.removeAttribute("disabled");
-    console.log("condition made");
+  // if(valid(namevalue.length, gt, 0) && eq(passvalue.length, 10)){
+  //   submit.removeAttribute("disabled");
+  //   console.log("condition made");
+  // }
 
-    submit.addEventListener("click", function()
-    {
-      window.open("www.youtube.com/watch?v=dQw4w9WgXcQ", "target", "resizable,scrollbars,status");
-    });
-  }
-
+  submit.addEventListener("click", function()
+  {
+    window.open("www.youtube.com/watch?v=dQw4w9WgXcQ", "target", "resizable,scrollbars,status");
+  });
 
 
 });
