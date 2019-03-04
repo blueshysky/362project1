@@ -75,9 +75,10 @@ label {
   opacity: 0.33;
   border: 0.33;
   border-color: #2874CF;
+  cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover:disabled {
   cursor: pointer;
   color: #CEC5C5;
   background-color: #998E8E;

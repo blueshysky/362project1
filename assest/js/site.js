@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", function()
   var password = document.querySelector("#newpassword");
   var username = document.querySelector("#username");
   var email = document.querySelector("#email");
-  var headingtext = document.querySelector("#signinsubmit");
+  var submit = document.querySelector("#signinsubmit");
   var inner_text = document.querySelector("#two");
-  inner_text.innerHTML += '<b id="contact-error"></b>';
 
   function eq(value, condition)
   {
@@ -39,14 +38,13 @@ document.addEventListener("DOMContentLoaded", function()
   password.addEventListener("focus", function()
   {
     console.log("focused");
-    inner_text.innerText = "Need minimal length of 10.";
 
     password.addEventListener("keyup", function()
     {
       var passvalue = this.value;
       console.log(passvalue);
 
-      if(valid(passvalue.length, gt, 10))
+      if(eq(passvalue.length, 10))
       {
         console.log("password length is bigger than 10");
         password.classList.remove("msg");
@@ -70,25 +68,27 @@ document.addEventListener("DOMContentLoaded", function()
 
   email.addEventListener("keyup", function()
   {
-    var evalue = this.value.replace(/\w/g, " ");
+    var evalue = this.value;
 
     console.log(evalue);
 
     if(valid(evalue, eq, /^[^@\s]+@[^@\s]+$/g))
     {
-      email.classList.add("msg");
+      email.classList.remove("msg");
       console.log("hey it's true email valid");
     }
   });
 
-  if(valid(email) && valid(password)){
+  if(valid(namevalue.length, gt, 0) && eq(passvalue.length, 10)){
+    submit.removeAttribute("disabled");
+    console.log("condition made");
 
-    headingtext.addEventListener("click", function()
+    submit.addEventListener("click", function()
     {
-      console.log("you clicked on this button");
-      window.alert("You signed up signup! A notification has been sent out!");
+      window.open("www.youtube.com/watch?v=dQw4w9WgXcQ", "target", "resizable,scrollbars,status");
     });
   }
+
 
 
 });
