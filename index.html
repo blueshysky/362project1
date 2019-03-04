@@ -5,7 +5,7 @@
   <title>Home</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" href="/assest/css/screen.css" />
+  <link rel="stylesheet" href="assest/css/screen.css" />
 </head>
 
 <body>
@@ -17,23 +17,24 @@
   <main id="content" >
     <p id="brief">
       Beta testing for upcoming game!
+      Join now and get newsletter for future updates.
     </p>
           <form id="signup" action="index.html" method="post">
             <ol>
 
-              <li>
+              <li id="one">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" />
+                <input class="msg" type="text" name="username" id="username" />
               </li>
 
-              <li>
+              <li id="two">
                 <label for="newpassword">Password</label>
-                <input type="text" name="newpassword" id="newpassword" />
+                <input class="msg" type="password" name="newpassword" id="newpassword" />
               </li>
 
-              <li>
+              <li id="three">
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="you@example.com" />
+                <input class="msg" type="email" name="email" id="email" placeholder="you@example.com" />
               </li>
 
               <li>
@@ -47,5 +48,7 @@
   </main>
 
 </body>
+
 <script src="assest/js/site.js"> </script>
+
 </html>
